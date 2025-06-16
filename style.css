@@ -42,9 +42,6 @@ body{
     color: rgb(192, 72, 228);
 }
 
-.main-container:hover {
-
-}
 
 .main-container, .top-bar, .links-to-social {
     display: flex;
@@ -58,7 +55,7 @@ body{
     backdrop-filter: blur(3px);
 }
 
-.main-container{
+.main-container {
     flex-direction: column;
     width: 900px;
     height: 320px;
@@ -66,7 +63,15 @@ body{
     line-height: 2;
     padding-bottom: 50px;
     margin-top: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.5s, padding 0.3s cubic-bezier(0.4,0,0.2,1);
 }
+
+.main-container:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.6);
+    padding: 50px;
+}
+
 
 .top-bar{
     margin-top: 20px;
@@ -135,9 +140,3 @@ a {
     height: 50px;
     width: 50px;
 }
-
-/* @keyframes borderAnim {
-    0% {
-        border:
-    }
-} */

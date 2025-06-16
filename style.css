@@ -18,6 +18,33 @@ body{
     align-items: center;
 }
 
+.main-container h1 {
+    margin-bottom: 0px; /* Reduce this value as needed */
+    padding-top: 15px;
+}
+
+.discover-my-prowess {
+    margin-bottom: 30px;
+}
+
+.prowess-btn {
+    border: none;
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17.5px;
+    color: white;
+    transition: background 0.4s, color 0.3s;
+}
+
+.prowess-btn:hover {
+    background: rgba(255,255,255,0.6);
+    color: rgb(192, 72, 228);
+}
+
+.main-container:hover {
+
+}
 
 .main-container, .top-bar, .links-to-social {
     display: flex;
@@ -38,6 +65,7 @@ body{
     padding: 30px;
     line-height: 2;
     padding-bottom: 50px;
+    margin-top: 10px;
 }
 
 .top-bar{
@@ -45,11 +73,26 @@ body{
     width: auto;
     height: auto;
     padding: 15px;
+    transition: border 0.3s;
+}
+
+.top-bar:hover {
+    border: 10px solid rgb(185, 12, 185);
 }
 
 .home, .about, .contact, .projects{
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: transform 0.5s, box-shadow 0.3s;
+    border-radius: 20px;
+}
+
+.home:hover,
+.about:hover,
+.contact:hover,
+.projects:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
 }
 
 a {
@@ -58,14 +101,23 @@ a {
     font-size: 16px;
 }
 
+.btn{
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 10px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+    /* border: 2px solid blue; */
+}
+
 .btn:hover{
-    transform: scale(1.5);
     transition: transform 0.2s;
 }
 
 .box{
     width: 100px;
-    height: 100px;
+    height: 70px;
 }
 
 .links-to-social {
@@ -76,10 +128,6 @@ a {
     margin-bottom: 10px;
 }
 
-.btn{
-    background: none;
-    border: none;
-}
 
 #icon {
     margin-left: 15px;
@@ -87,3 +135,9 @@ a {
     height: 50px;
     width: 50px;
 }
+
+/* @keyframes borderAnim {
+    0% {
+        border:
+    }
+} */

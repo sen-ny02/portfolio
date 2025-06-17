@@ -174,7 +174,7 @@ li {
 
 .top-bar{
     font-family: monospace;
-    /* margin-top: 20px; */
+    margin-top: 0;
     width: auto;
     height: auto;
     padding: 15px;
@@ -211,6 +211,29 @@ li {
 }
 
 
+.journey-para {
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: inline-block;
+    transition:
+        box-shadow 0.5s,
+        transform 0.5s;
+}
+
+.journey-para:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, 0.7);
+}
+
+.journey-title {
+    border-bottom: 5px double transparent;
+    transition: border-bottom-color 0.5s;
+}
+
+.journey-title:hover {
+    border-bottom: 5px double white;
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -233,14 +256,14 @@ a {
 
 @keyframes borderAnim {
     0%   { border: 1.5px solid rgba(255, 255, 255, 0.25);}
-    50%  { border: 6px double rgb(197, 48, 197);}
-    100% { border: 10px solid rgb(197, 48, 197);}
+    50%  { border: 6px dotted rgb(197, 48, 197);}
+    100% { border: 8px solid rgb(197, 48, 197);}
 }
 
 @keyframes oppositeBorderAnim {
     100%   { border: 1.5px solid rgba(255, 255, 255, 0.25);}
-    50%  { border: 6px double rgb(197, 48, 197);}
-    0% { border: 10px solid rgb(197, 48, 197);}
+    50%  { border: 6px dotted rgb(197, 48, 197);}
+    0% { border: 8px solid rgb(197, 48, 197);}
 }
 
 
@@ -252,18 +275,18 @@ a {
 }
 
 .skills:hover {
-    animation: borderAnim 1.8s forwards;
+    animation: borderAnim 1.3s forwards;
 }
 
 /* Only apply the animation on hover, not by default */
 .skills:not(:hover) {
-    animation: oppositeBorderAnim 1.8s forwards !important;
+    animation: oppositeBorderAnim 1.3s forwards !important;
 }
 .skills {
     animation: none !important;
 }
 .skills:hover {
-    animation: borderAnim 1.8s forwards !important;
+    animation: borderAnim 1.3s forwards !important;
 }
 
 

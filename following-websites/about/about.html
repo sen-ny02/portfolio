@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sen's Portfolio - About me</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="typewriter.css">
 </head>
 <body>
     <div class="content">
@@ -12,11 +13,17 @@
             <div class="about-left" id="glassmorphism">
                 <h1>About Me</h1>
                 <p>Hello! I'm Sen, a passionate web developer with a keen interest in creating dynamic and responsive web applications. I have experience in various web technologies and enjoy learning new skills to enhance my development capabilities.</p>
+                <div class="typewriter-cont">
+                    <p class="hidden-typewriter">
+                        I also love making CSS hover animations!
+                    </p>
+                </div>
             </div>
             <div class="about-right">
                 <div class="journey" id="glassmorphism">
                     <h2>My Journey</h2>
-                    <p>I started my journey in web development a few years ago, initially focusing on front-end technologies. Over time, I expanded my skill set to include back-end development, allowing me to build full-stack applications.</p>
+                    <p>I started my journey in web development a year ago, initially focusing on front-end technologies. Currently, I am expanding my skill set to include back-end development, allowing me to build full-stack applications.</p>
+
                 </div>
                 <div class="skills" id="glassmorphism">
                     <h2>Skills</h2>
@@ -38,6 +45,12 @@
         </div>
     </div>
     <script>
+        document.querySelector('.hidden-typewriter').addEventListener('mouseenter', function() {
+            this.style.animation = 'none';
+            // Force reflow to restart the animation
+            void this.offsetWidth;
+            this.style.animation = 'typing 2s steps(41), cursor .4s step-end infinite alternate';
+        });
         alert("Make sure to hover your cursor above everything to experience every animation in store!")
     </script>
 </body>

@@ -26,6 +26,7 @@
     line-height: 2;
 }
 
+
 .top-section,
 .journey{
     text-align: center;
@@ -69,6 +70,7 @@ body {
 }
 
 .content {
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: space-evenly;

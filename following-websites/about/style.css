@@ -242,6 +242,13 @@ a {
     animation: borderAnim 1.8s forwards;
 }
 
+/* Only apply the animation on hover, not by default */
+.skills:not(:hover) {
+    animation: oppositeBorderAnim 1.8s forwards !important;
+}
 .skills {
-    animation: oppositeBorderAnim 1.8s forwards;
+    animation: none !important;
+}
+.skills:hover {
+    animation: borderAnim 1.8s forwards !important;
 }

@@ -66,7 +66,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    /* Remove overflow: hidden for scrollability */
+
 }
 
 .content {
@@ -124,7 +124,7 @@ h1,h2,h3 {
 
 }
 
-/* ISAAC STYLING */
+/* STYLING */
 .opening-para {
     /* border: 2px solid blue; */
     height: auto;
@@ -269,8 +269,6 @@ a {
 
 
 .skills {
-    /* Remove animation from default state */
-    /* No animation here */
     transition: border 0.3s;
 }
 
@@ -278,7 +276,7 @@ a {
     animation: borderAnim 1.3s forwards;
 }
 
-/* Only apply the animation on hover, not by default */
+
 .skills:not(:hover) {
     animation: oppositeBorderAnim 1.3s forwards !important;
 }

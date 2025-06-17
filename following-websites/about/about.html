@@ -91,6 +91,8 @@
             }
         });
         document.body.style.overflow = "hidden";
+
+        // synthetically increase loading screen time
         window.addEventListener("load", function() {
             setTimeout(function() {
                 const loader = document.querySelector(".loading-wrapper");

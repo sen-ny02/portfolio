@@ -26,7 +26,7 @@
         <div class="main-container">
             <h1>About Me</h1>
             <p>
-                I am a dedicated computer science student with a passion for learning and problem-solving. I enjoy exploring new technologies, building projects, and continuously improving my programming skills. My goal is to contribute to innovative solutions and grow as a developer.
+                I am a dedicated computer science student with a passion for learning and problem-solving. I enjoy exploring new technologies, building projects, and continuously improving my programming skills. My goal is to contribute to innovative solutions and grow as a developer. I assure you...
                 <br><br>
                 <span class="choice">Choosing me is the best option you'll make.</span><br>
                 Not convinced?
@@ -53,5 +53,24 @@
             </a>
         </div>
     </div>
+    <div class="loading-wrapper">
+        <p>Thank you for your time. <br><br> Allow me to demonstrate the benefits of choosing me.</p>
+        <div class="loader"></div>
+    </div>
+    <script>
+            // synthetically increase loading screen time
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                const loader = document.querySelector(".loading-wrapper");
+                loader.style.transition = "opacity 0.7s";
+                loader.style.opacity = 0;
+                // Restore scrolling after loader fades out
+                setTimeout(() => {
+                    loader.style.display = "none";
+                    document.body.style.overflow = ""; // or "auto"
+                }, 700);
+            }, 3500); // 1.2 seconds delay
+        });
+    </script>
 </body>
 </html>

@@ -35,7 +35,7 @@
 
 
 .about-left {
-    width: 87vw;
+    width: 84vw;
     height: 70vh;
     display: flex;
     align-items: center;
@@ -263,7 +263,7 @@ a {
 
 
 .about-right {
-    width: 87vw;
+    width: 84vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -274,7 +274,7 @@ a {
 .skills,
 .hobbies {
     flex-direction: column;
-    width: 24vw;
+    width: 22vw;
     height: 45vh;
 }
 .btn{

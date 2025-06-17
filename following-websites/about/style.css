@@ -33,6 +33,7 @@
     text-align: center;
 }
 
+
 .about-left {
     width: 87vw;
     height: 70vh;
@@ -267,7 +268,6 @@ a {
     justify-content: space-between;
     align-items: center;
     margin-top: 1vw;
-    /* border: 2px solid blue; */
 }
 
 .journey,
@@ -275,7 +275,7 @@ a {
 .hobbies {
     flex-direction: column;
     width: 24vw;
-    height: 30vh;
+    height: 45vh;
 }
 .btn{
     margin-left: 3px;

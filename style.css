@@ -93,7 +93,7 @@ body{
 }
 
 .top-bar:hover {
-    border: 10px solid rgb(185, 12, 185);
+    border: 10px solid rgb(48, 61, 245)
 }
 
 .home, .about, .contact, .projects{

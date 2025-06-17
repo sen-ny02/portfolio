@@ -9,13 +9,27 @@
 </head>
 <body>
     <div class="content">
+        <div class="top-bar">
+            <div class="home">
+                <button class="btn"><a href="../../index.html">Home</a></button>
+            </div>
+            <div class="about">
+                <button class="btn"><a href="about.html">About</a></button>
+            </div>
+            <div class="contact">
+                <button class="btn"><a href="following-websites/contact/contact.html">Contact</a></button>
+            </div>
+            <div class="projects">
+                <button class="btn"><a href="following-websites/skillset/skillset.html">Skillset</a></button>
+            </div>
+        </div>
         <div class="top-section">
             <div class="about-left" id="glassmorphism">
-                <h1>About Me</h1>
-                <p>Hello! I'm Sen, a passionate web developer with a keen interest in creating dynamic and responsive web applications. I have experience in various web technologies and enjoy learning new skills to enhance my development capabilities.</p>
+                <div class="about-me-title-box"><h1 class="abot-me-title">About Me</h1></div>
+                <p class="opening-para">Hello! I'm Sen, a passionate web developer with a keen interest in creating dynamic and responsive web applications. I have experience in various web technologies and enjoy learning new skills to enhance my development capabilities.</p>
                 <div class="typewriter-cont">
                     <p class="hidden-typewriter">
-                        I also love making CSS hover animations!
+                        I also love making cool animations!
                     </p>
                 </div>
             </div>
@@ -26,7 +40,7 @@
 
                 </div>
                 <div class="skills" id="glassmorphism">
-                    <h2>Skills</h2>
+                    <h2 class="skills-header">Skills</h2>
                     <ul>
                         <li>HTML, CSS, Some JavaScript</li>
                         <li>Some knowledge in Database Management (SQL)</li>
@@ -34,24 +48,32 @@
                         <li>Front end design</li>
                         <li>Creativity</li>
                     </ul>
+                    <p>Go to "Skillset" to find out more!</p>
                 </div>
-            </div>
-        </div>
-        <div class="contact-container">
-            <div class="contact-details" id="glassmorphism">
-                <h2>Contact Me</h2>
-                <p>If you'd like to get in touch or collaborate on a project, feel free to reach out via email at <a href="mailto:sen2007.maka@gmail.com">sen2007.maka@gmail.com</a>
             </div>
         </div>
     </div>
     <script>
-        document.querySelector('.hidden-typewriter').addEventListener('mouseenter', function() {
-            this.style.animation = 'none';
-            // Force reflow to restart the animation
-            void this.offsetWidth;
-            this.style.animation = 'typing 2s steps(41), cursor .4s step-end infinite alternate';
+        const typewriter = document.querySelector('.hidden-typewriter');
+        function restartTypewriter() {
+            typewriter.style.animation = 'none';
+            void typewriter.offsetWidth; // Force reflow
+            typewriter.style.animation = 'typing 2s steps(41), cursor .4s step-end infinite alternate';
+        }
+        typewriter.addEventListener('animationend', function(e) {
+            if (e.animationName === 'typing') {
+                setTimeout(restartTypewriter, 2000); // Optional pause before repeating
+            }
         });
-        alert("Make sure to hover your cursor above everything to experience every animation in store!")
+
+        // document.querySelector('.hidden-typewriter').addEventListener('mouseenter', function() {
+        //     this.style.animation = 'none';
+        //     // Force reflow to restart the animation
+        //     void this.offsetWidth;
+        //     this.style.animation = 'typing 2s steps(41), cursor .4s step-end infinite alternate';
+        // });
+
+        // alert("Make sure to hover your cursor above everything to experience every animation in store!")
     </script>
 </body>
 </html>

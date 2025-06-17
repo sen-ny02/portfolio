@@ -197,8 +197,19 @@ li {
 .contact:hover,
 .projects:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.);
 }
+
+.gotoskillset {
+    color: rgba(255, 255, 255, 0.3);
+    transition: color 0.1s, scale 0.2s;
+}
+
+.gotoskillset:hover {
+    color: rgba(255, 255, 255, 1);
+    scale: 1.1;
+}
+
 
 a {
     color: white;
@@ -251,4 +262,56 @@ a {
 }
 .skills:hover {
     animation: borderAnim 1.8s forwards !important;
+}
+
+
+/* LOADING ANIMATION */
+
+/* HTML: <div class="loader"></div> */
+
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  display: grid;
+  border: 4px solid #0000;
+  border-radius: 50%;
+  border-color: #ccc #0000;
+  animation: l16 1s infinite linear;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  grid-area: 1/1;
+  margin: 2px;
+  border: inherit;
+  border-radius: 50%;
+}
+.loader::before {
+  border-color: rgb(197, 48, 197) white;
+  animation: inherit;
+  animation-duration: .5s;
+  animation-direction: reverse;
+}
+.loader::after {
+  margin: 8px;
+}
+@keyframes l16 {
+  100%{transform: rotate(1turn)}
+}
+
+.loading-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgb(197, 48, 197), black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loading-wrapper p {
+    font-size: 20px;
 }

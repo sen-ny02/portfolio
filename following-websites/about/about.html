@@ -48,8 +48,12 @@
                         <li>Front end design</li>
                         <li>Creativity</li>
                     </ul>
-                    <p>Go to "Skillset" to find out more!</p>
+                    <p class="gotoskillset">Go to "Skillset" to find out more!</p>
                 </div>
+            </div>
+            <div class="loading-wrapper">
+                <p>This loader is fake, just to show off my skills</p>
+                <div class="loader"></div>
             </div>
         </div>
     </div>
@@ -64,6 +68,15 @@
             if (e.animationName === 'typing') {
                 setTimeout(restartTypewriter, 2000); // Optional pause before repeating
             }
+        });
+
+        window.addEventListener("load", function() {
+            setTimeout(function() {
+                const loader = document.querySelector(".loading-wrapper");
+                loader.style.transition = "opacity 0.7s";
+                loader.style.opacity = 0;
+                setTimeout(() => loader.style.display = "none", 700);
+            }, 1200); // 1.8 seconds delay
         });
 
         alert("Make sure to hover your cursor above everything to experience every animation in store!")

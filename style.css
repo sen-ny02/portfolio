@@ -9,7 +9,6 @@ body{
     flex-direction: column;
     /* margin: auto; */
     color: white;
-    overflow: hidden;
 }
 .content{
     display: flex;

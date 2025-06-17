@@ -1,7 +1,11 @@
 body{
     background-image: url("jlpv3gf20c291.png");
-    background-size: cover;
-    width: 100%;
+    background-size: cover;           /* Ensures the image covers the whole area */
+    background-repeat: no-repeat;      /* Prevents tiling */
+    background-position: center;       /* Centers the image */
+    min-height: 100vh;                 /* Ensures body is at least full viewport height */
+    width: 100vw;                      /* Ensures body is full viewport width */
+    margin: 0;
     height: 100vh;
     display: flex;
     justify-content: space-evenly;

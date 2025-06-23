@@ -1,7 +1,7 @@
 body{
       /* Centers the image */
-    min-height: 100%;                 /* Ensures body is at least full viewport height */
-    width: 100vw;                      /* Ensures body is full viewport width */
+    min-height: 100%;
+    width: 100vw;
     margin: 0;
     height: 100vh;
     display: flex;
@@ -23,8 +23,8 @@ html, body {
 
 html {
     background-image: url("jlpv3gf20c291.png");
-    background-size: cover;           /* Ensures the image covers the whole area */
-    background-repeat: no-repeat;      /* Prevents tiling */
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
 }
 
@@ -36,7 +36,7 @@ html {
 }
 
 .main-container h1 {
-    margin-bottom: 0px; /* Reduce this value as needed */
+    margin-bottom: 0px;
     padding-top: 15px;
 }
 
